@@ -16,6 +16,11 @@ public class List_Adapter extends BaseAdapter {
 
     private Context context;
 
+    public List_Adapter(Context context, ArrayList<Student> studentsArrayList) {
+        this.context = context;
+        this.studentsArrayList = studentsArrayList;
+    }
+
     private ArrayList<Student> studentsArrayList;
     @Override
     public int getCount() {
@@ -52,6 +57,6 @@ public class List_Adapter extends BaseAdapter {
 
 
         return convertView;
-        
+
     }
 }
